@@ -11,6 +11,14 @@ import (
 	"github.com/x0n4d0/code-delivery-simulator/infra/kafka"
 )
 
+/* Example of a json request:
+
+{"clientId":"1","routeId":"1"}
+{"clientId":"2","routeId":"2"}
+{"clientId":"3","routeId":"3"}
+
+*/
+
 func Produce(msg *ckafka.Message) {
 	producer := kafka.NewKafkaProducer()
 	route := route2.NewRoute()
