@@ -6,8 +6,9 @@ import (
 
 	ckafka "github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/joho/godotenv"
-	kafka2 "github.com/x0n4d0/code-delivery/application/kafka"
-	"github.com/x0n4d0/code-delivery/infra/kafka"
+
+	kafka2 "github.com/x0n4d0/code-delivery-simulator/application/kafka"
+	"github.com/x0n4d0/code-delivery-simulator/infra/kafka"
 )
 
 func init() {
