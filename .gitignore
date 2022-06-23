@@ -36,6 +36,6 @@ coverage
 !.vscode/extensions.json
 
 # Docker
-.docker/dbdata
+**/.docker/dbdata
 
 .history/
