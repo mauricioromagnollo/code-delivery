@@ -37,6 +37,5 @@ coverage
 
 # Docker
 .docker/dbdata
-.docker/mongo
 
 .history/
