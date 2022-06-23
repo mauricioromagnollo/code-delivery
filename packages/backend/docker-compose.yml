@@ -14,6 +14,7 @@ services:
 
   db:
     image: mongo:4.4.4
+    container_name: code_delivery_mongodb
     restart: always
     volumes:
       - ./.docker/dbdata:/data/db
@@ -25,6 +26,7 @@ services:
 
   mongo-express:
     image: mongo-express
+    container_name: code_delivery_mongo_express
     restart: always
     ports:
       - 8081:8081
