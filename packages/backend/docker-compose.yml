@@ -14,7 +14,7 @@ services:
 
   db:
     image: mongo:4.4.4
-    restart: on-failure:5
+    restart: always
     volumes:
       - ./.docker/dbdata:/data/db
       - ./.docker/mongo:/docker-entrypoint-initdb.d
@@ -25,7 +25,7 @@ services:
 
   mongo-express:
     image: mongo-express
-    restart: on-failure:5
+    restart: always
     ports:
       - 8081:8081
     environment:
