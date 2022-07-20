@@ -39,3 +39,6 @@ coverage
 **/.docker/dbdata
 
 .history/
+
+# Temp
+tmp/
