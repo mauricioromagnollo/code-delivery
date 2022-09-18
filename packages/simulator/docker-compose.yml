@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  code_delivery_simulator_app:
+    build: .
+    container_name: code_delivery_simulator_app
+    volumes:
+      - .:/go/src
+    extra_hosts:
+      - "host.docker.internal:172.17.0.1"
